@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Threadhound</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>Threadhound</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/script.js"></script>
 </head>
 <body>
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Retailers focus on fitting three people.</h1>
-			<h3>Those three people don't exist.</h3>
-			<form class="form-horizontal ">
+			<h3>Small, Medium and Large don't exist in the real world</h3>	
+			<h3>Get Fitted In Under 30 Seconds</h3>
+		</div>
+	</div>
+	<div id="formbar">
+		<form class="form-horizontal col-lg-12" id="topform">
+			<div class="container">
 				<div class="form-group col-lg-3">
-					<label  for="shirt-brand">Best Fitting Shirt</label>
-	    				<input type="text" class="form-control" id="shirtbrand" placeholder="Banana Republic">
+	    				<input type="text" class="form-control" id="shirtbrand" placeholder="Best Fit (e.g.Banana Republic)">
 				</div>
 				<div class="form-group col-lg-3">
-					<label for="exampleInputEmail2">Size</label>
-	    				<input type="text" class="form-control" id="shirtsize" placeholder="15 (or M)">
+	    				<input type="text" class="form-control" id="shirtsize" placeholder="Size (15 or M)">
 				</div>
 				<div class="form-group col-lg-3">
-					<label for="exampleInputEmail2">Email address</label>
-	    				<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+	    				<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Style (Casual or Slim)">
 				</div>
 				<div class="form-group col-lg-3">
 	    				<a class="btn btn-primary col-lg-12" href="/about.html">Get your fit!</a>
 				</div>
-			</form>	
-			<h3>Get Fitted In Under 30 Seconds</h3>
-		</div>
+			</div>
+		</form>
 	</div>
 	<article class="container">
 		<p>Get fitted and never puzzle over size charts ever again. Our fit technology uses information about your current best-fitting shirt along with some basic information about you to match you up with the right fit profile. Please tell us a bit more about your best-fitting shirt below:</p>
@@ -36,9 +42,13 @@
 	<article class="container"> 
 		<img src="assets/img/as-seen-in.png">
 	</article>
-	<article class="container">
-		<h2>Step 1</h2>
+	<article class="step">
+		<div class="step-shape">
+			<h2>Step 1</h2>
+		</div>
+		<div class="step-content">
 		<h3>Tell us a little about you. Answer a few simple questions: your best-fitting shirt (this gives us some information about your size), your height, weight and waist.</h3>
+		</div>
 	</article>
 	<article class="container">
 		<h2>Step 2</h2>
@@ -48,5 +58,11 @@
 		<h2>Step 3</h2>
 		<h3>Shop our store with confidence knowing that we'll pick the best size for you. We are Fashion Metric, we killed the size chart once and for all.</h3>
 	</article>
+	<div class="container">
+		<h1 style="padding-bottom: 500px">SPACERRRR</h1>
+	</div>
+	<footer class="container">
+		<h4>Footers and stuff</h4>
+	</footer>
 </body>
 </html>
