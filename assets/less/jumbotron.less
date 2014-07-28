@@ -6,7 +6,7 @@
 .jumbotron {
   .make-lg-column(12);
   padding: @jumbotron-padding;
-  margin-bottom: @jumbotron-padding;
+  margin-bottom: 0;
   color: @jumbotron-color;
   background-color: @jumbotron-bg;
   background-image: url('../img/hero.jpg');
@@ -17,9 +17,17 @@
   .h1 {
     color: @jumbotron-heading-color;
     padding: 75px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
   }
   h3 {
     padding: 0 0 75px 0;
+    text-align: center;
+    font-family: @font-family-alt;
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+  h4 {
     text-align: center;
   }
   p {
@@ -51,7 +59,7 @@
 
     h1,
     .h1 {
-      font-size: (@font-size-base * 4.5);
+      font-size: (@font-size-base * 2.5);
     }
   }
 }
