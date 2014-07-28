@@ -1,10 +1,25 @@
 .step {
-  .step-shape {
-     .make-lg-column(4);
-     text-align: center;
-  }
-  .step-content {
-     .make-lg-column(8);
-     text-align: center;
-  }
+  	margin-top: 150px;
+	.step-shape {
+	   .make-lg-column(4);
+	   text-align: center;
+	   padding: 150px;
+	   border-radius: 50%;
+	   color: white;
+           background-color: @gray-light;
+	  }
+  	.step-content {
+     		.make-lg-column(8);
+     		h3 {
+     		text-align: center;
+     		width: 60%;
+     		display: block;
+     		margin: 0 auto;
+     		margin-top: 150px;
+     		font-family: @font-family-alt;
+     		color: @gray-dark;
+     		font-weight: @light-weight;
+     		font-size: 1.1em;
+     		}
+  	}
 }
