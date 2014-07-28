@@ -4610,7 +4610,7 @@ a.list-group-item.active > .badge,
   text-transform: uppercase;
 }
 .jumbotron h3 {
-  padding: 0 0 75px 0;
+  padding: 0 0 125px 0;
   text-align: center;
   font-family: 'Merriweather', serif;
   font-weight: 300;
