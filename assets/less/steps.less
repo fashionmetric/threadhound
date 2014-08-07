@@ -1,22 +1,32 @@
 .step {
-        .make-lg-column(4);
+    .make-lg-column(4);
         margin-top: 100px;
         .step-shape {
-            .make-row();
             text-align: center;
+            .fa-lg {
+                font-size: 3em;
+                .fa-circle {
+                    color: @gray-lighter;
+                }
+                .fa-twitter {
+                    color: @gray-darker;
+                }
+            }
         }
-        .make-row();
         .step-content {
-            h3 {
-            width: 95%;
-            text-align: left;
-            display: block;
-            margin: 0 auto;
-            font-family: @font-family-alt;
-            color: @gray-dark;
-            font-weight: @light-weight;
-            font-size: 1.1em;
-            line-height: 1.5em;
-            }
-            }
+        h2 {
+        text-align: center;
+        }
+        h3 {
+        width: 95%;
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+        font-family: @font-family-alt;
+        color: @gray-dark;
+        font-weight: @light-weight;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        }
+    }
 }
