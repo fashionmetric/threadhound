@@ -1,27 +1,22 @@
 .step {
-  	margin-top: 150px;
-	.step-shape {
-	   .make-lg-column(5);
-	    text-align: center;
-         margin-left: -15px;
-	   color: white;
-         height: 0;
-         border-right: 50px solid transparent;
-         border-left: 0px solid transparent;
-         border-bottom: 100px solid @gray-light;
-	  }
-  	.step-content {
-     		.make-lg-column(7);
-     		h3 {
-     		text-align: center;
-     		width: 60%;
-     		display: block;
-     		margin: 0 auto;
-     		margin-top: 150px;
-     		font-family: @font-family-alt;
-     		color: @gray-dark;
-     		font-weight: @light-weight;
-     		font-size: 1.1em;
-     		}
-  	}
+        .make-lg-column(4);
+        margin-top: 100px;
+        .step-shape {
+            .make-row();
+            text-align: center;
+        }
+        .make-row();
+        .step-content {
+            h3 {
+            width: 95%;
+            text-align: left;
+            display: block;
+            margin: 0 auto;
+            font-family: @font-family-alt;
+            color: @gray-dark;
+            font-weight: @light-weight;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            }
+            }
 }
