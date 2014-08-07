@@ -881,7 +881,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1395,10 +1395,31 @@ pre code {
     width: 1170px;
   }
 }
-.article,
-.intro {
+article {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   z-index: -1;
+}
+@media (min-width: 1200px) {
+  article {
+    float: left;
+    width: 100%;
+  }
+}
+footer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #8e16fa;
+}
+@media (min-width: 1200px) {
+  footer {
+    float: left;
+    width: 100%;
+  }
 }
 .container-fluid {
   margin-right: auto;
@@ -3593,7 +3614,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 #formbar .form-group .form-control {
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: 1.3em;
+  font-size: 1em;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -3613,7 +3634,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #eeeeee;
 }
 #formbar .form-group .btn-primary {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -4593,8 +4614,11 @@ a.list-group-item.active > .badge,
   color: #ffffff;
   background-color: #eeeeee;
   background-image: url('../img/hero.jpg');
-  background-repeat: fixed;
+  background-attachment: fixed;
   background-size: cover;
+  height: 600px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 1px black;
 }
 @media (min-width: 1200px) {
   .jumbotron {
@@ -4602,19 +4626,25 @@ a.list-group-item.active > .badge,
     width: 100%;
   }
 }
-.jumbotron h1,
-.jumbotron .h1 {
-  color: inherit;
-  padding: 75px 0 0 0;
+.jumbotron h2 {
   text-align: center;
-  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 70px;
+  padding-top: 45px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  font-size: 4.2em;
+  font-weight: 700;
+  text-shadow: -5px 4px 1px #8e16fa;
 }
 .jumbotron h3 {
-  padding: 0 0 75px 0;
+  padding: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
   font-weight: 300;
   font-size: 1.2em;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 35px;
 }
 .jumbotron h4 {
   text-align: center;
@@ -4626,6 +4656,31 @@ a.list-group-item.active > .badge,
 }
 .jumbotron .continuebar {
   padding: 100px 0;
+}
+.jumbotron .headlines {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .jumbotron .headlines {
+    float: left;
+    width: 50%;
+  }
+}
+.jumbotron .subheadline {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 85px;
+}
+@media (min-width: 1200px) {
+  .jumbotron .subheadline {
+    float: left;
+    width: 100%;
+  }
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -6257,10 +6312,11 @@ button.close {
   background-color: #eeeeee;
 }
 .intro h1 {
-  text-transform: uppercase;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 2.6em;
   margin-top: 150px;
+  font-weight: 700;
+  text-shadow: -5px 4px 1px #ffffff;
 }
 .intro p {
   font-size: 1.1em;
@@ -6270,47 +6326,43 @@ button.close {
   font-weight: 300;
 }
 .step {
-  margin-top: 150px;
-}
-.step .step-shape {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
-  padding: 150px;
-  border-radius: 50%;
-  color: white;
-  background-color: #777777;
+  margin-top: 100px;
 }
 @media (min-width: 1200px) {
-  .step .step-shape {
+  .step {
     float: left;
     width: 33.33333333%;
   }
 }
-.step .step-content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+.step .step-shape {
+  text-align: center;
 }
-@media (min-width: 1200px) {
-  .step .step-content {
-    float: left;
-    width: 66.66666667%;
-  }
+.step .step-shape .fa-lg {
+  font-size: 3em;
+}
+.step .step-shape .fa-lg .fa-circle {
+  color: #eeeeee;
+}
+.step .step-shape .fa-lg .fa-twitter {
+  color: #222222;
+}
+.step .step-content h2 {
+  text-align: center;
 }
 .step .step-content h3 {
-  text-align: center;
-  width: 60%;
+  width: 95%;
+  text-align: left;
   display: block;
   margin: 0 auto;
-  margin-top: 150px;
   font-family: 'Merriweather', serif;
   color: #333333;
   font-weight: 300;
   font-size: 1.1em;
+  line-height: 1.5em;
 }
 footer {
   background-color: #222222;
@@ -6322,6 +6374,11 @@ footer h4 {
   font-weight: 300;
   font-size: .9em;
   padding: 15px 0;
+}
+@media only screen and (max-width: 768px) {
+  footer h4 {
+    color: blue;
+  }
 }
 .as-seen {
   margin: 50px auto;

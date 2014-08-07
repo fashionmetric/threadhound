@@ -1,16 +1,7 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17670",
+"creatorBuild": "17682",
 "files": {
-	"\/about.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/about.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/css\/bootstrap.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -38,6 +29,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/about.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153371,
+		"inputAbbreviatedPath": "\/assets\/img\/about.png",
+		"outputAbbreviatedPath": "\/assets\/img\/about.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/as-seen-in.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -53,20 +55,31 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2.27384e+06,
+		"initialSize": 304334,
 		"inputAbbreviatedPath": "\/assets\/img\/hero.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/hero.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/WhiteBackground.png": {
+	"\/assets\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 159853,
-		"inputAbbreviatedPath": "\/assets\/img\/WhiteBackground.png",
-		"outputAbbreviatedPath": "\/assets\/img\/WhiteBackground.png",
+		"initialSize": 10746,
+		"inputAbbreviatedPath": "\/assets\/img\/logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logowhite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24330,
+		"inputAbbreviatedPath": "\/assets\/img\/logowhite.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logowhite.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1580,6 +1593,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/next.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/next.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

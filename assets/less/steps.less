@@ -1,25 +1,32 @@
 .step {
-  	margin-top: 150px;
-	.step-shape {
-	   .make-lg-column(4);
-	   text-align: center;
-	   padding: 150px;
-	   border-radius: 50%;
-	   color: white;
-           background-color: @gray-light;
-	  }
-  	.step-content {
-     		.make-lg-column(8);
-     		h3 {
-     		text-align: center;
-     		width: 60%;
-     		display: block;
-     		margin: 0 auto;
-     		margin-top: 150px;
-     		font-family: @font-family-alt;
-     		color: @gray-dark;
-     		font-weight: @light-weight;
-     		font-size: 1.1em;
-     		}
-  	}
+    .make-lg-column(4);
+        margin-top: 100px;
+        .step-shape {
+            text-align: center;
+            .fa-lg {
+                font-size: 3em;
+                .fa-circle {
+                    color: @gray-lighter;
+                }
+                .fa-twitter {
+                    color: @gray-darker;
+                }
+            }
+        }
+        .step-content {
+        h2 {
+        text-align: center;
+        }
+        h3 {
+        width: 95%;
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+        font-family: @font-family-alt;
+        color: @gray-dark;
+        font-weight: @light-weight;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        }
+    }
 }
