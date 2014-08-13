@@ -6325,6 +6325,9 @@ button.close {
   color: #777777;
   font-weight: 300;
 }
+.step-holder {
+  margin: 100px 0;
+}
 .step {
   position: relative;
   min-height: 1px;
@@ -6382,4 +6385,33 @@ footer h4 {
 }
 .as-seen {
   margin: 50px auto;
+}
+.testimonial {
+  margin: 100px 0;
+}
+.testimonial .col-lg-8 {
+  background-color: #eee;
+  height: 327px;
+  position: relative;
+}
+.testimonial .col-lg-8 h2 {
+  width: 85%;
+  margin: 90px auto 45px auto;
+  display: block;
+  font-size: 1.9em;
+}
+.testimonial .col-lg-8 p {
+  text-align: center;
+}
+.testimonial .col-lg-4 {
+  background-image: url('../img/testimonial.jpg');
+  background-size: cover;
+  overflow: hidden;
+  height: 327px;
+}
+.credblock {
+  margin: 50px auto;
+  padding: 50px 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
