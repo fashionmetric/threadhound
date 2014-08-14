@@ -3608,9 +3608,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 100%;
 }
 #formbar .form-group {
-  margin-left: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 #formbar .form-group .form-control {
   background-color: rgba(255, 255, 255, 0.5);
@@ -3632,6 +3630,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #333333;
   box-shadow: none;
   border-color: #eeeeee;
+  color: white;
 }
 #formbar .form-group .btn-primary {
   font-size: 1.1em;
@@ -6343,6 +6342,13 @@ button.close {
 }
 .step .step-shape {
   text-align: center;
+  background-color: #7405d8;
+  padding: 5px 0;
+}
+.step .step-shape .fa-stack {
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -50px;
 }
 .step .step-shape .fa-lg {
   font-size: 3em;
@@ -6350,22 +6356,28 @@ button.close {
 .step .step-shape .fa-lg .fa-circle {
   color: #eeeeee;
 }
-.step .step-shape .fa-lg .fa-twitter {
-  color: #222222;
+.step .step-shape .fa-lg .fa-stack-1x {
+  color: #7405d8;
+}
+.step .step-content {
+  background-color: #eee;
 }
 .step .step-content h2 {
   text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
 }
 .step .step-content h3 {
-  width: 95%;
+  width: 80%;
   text-align: left;
   display: block;
   margin: 0 auto;
   font-family: 'Merriweather', serif;
   color: #333333;
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5em;
+  padding-bottom: 15px;
 }
 footer {
   background-color: #222222;
@@ -6414,4 +6426,18 @@ footer h4 {
   padding: 50px 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+.bottomform {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .bottomform {
+    float: left;
+    width: 100%;
+  }
 }
