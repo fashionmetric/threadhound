@@ -6342,7 +6342,7 @@ button.close {
 }
 .step .step-shape {
   text-align: center;
-  background-color: #7405d8;
+  background-color: #ddd;
   padding: 5px 0;
 }
 .step .step-shape .fa-stack {
@@ -6366,6 +6366,8 @@ button.close {
   text-align: center;
   margin-top: 0;
   padding-top: 20px;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #ffffff;
 }
 .step .step-content h3 {
   width: 80%;
@@ -6424,8 +6426,8 @@ footer h4 {
 .credblock {
   margin: 50px auto;
   padding: 50px 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 3px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
 }
 .bottomform {
   position: relative;
@@ -6440,4 +6442,40 @@ footer h4 {
     float: left;
     width: 100%;
   }
+}
+.bottomform .bottomhead {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+  padding-top: 45px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  font-size: 4.2em;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #eeeeee;
+  color: #777777;
+}
+#bottomform .form-control {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#bottomform .form-control:focus {
+  -moz-transition: all .5s;
+  transition: all .5s;
+  background-color: #eeeeee;
+  box-shadow: none;
+  border-color: #eeeeee;
+  color: #222222;
+}
+#bottomform .control-label {
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#bottomform .btn-primary {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.3em;
 }
