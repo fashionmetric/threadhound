@@ -4625,29 +4625,6 @@ a.list-group-item.active > .badge,
     width: 100%;
   }
 }
-.jumbotron h2 {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 70px;
-  padding-top: 45px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  font-size: 4.2em;
-  font-weight: 700;
-  text-shadow: -5px 4px 0px #8e16fa;
-}
-.jumbotron h3 {
-  padding: 0;
-  text-align: center;
-  font-weight: 300;
-  font-size: 1.2em;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  padding-bottom: 35px;
-}
-.jumbotron h4 {
-  text-align: center;
-}
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
@@ -4668,6 +4645,26 @@ a.list-group-item.active > .badge,
     width: 50%;
   }
 }
+.jumbotron .headlines h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 70px;
+  padding-top: 45px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  font-size: 4.2em;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #8e16fa;
+}
+.jumbotron .headlines h3 {
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 35px;
+}
 .jumbotron .subheadline {
   position: relative;
   min-height: 1px;
@@ -4680,6 +4677,9 @@ a.list-group-item.active > .badge,
     float: left;
     width: 100%;
   }
+}
+.jumbotron .subheadline h4 {
+  text-align: center;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -6418,7 +6418,7 @@ footer h4 {
   text-align: center;
 }
 .testimonial .col-lg-4 {
-  background-image: url('../img/testimonial.jpg');
+  background-image: url('../img/testimonial1.jpg');
   background-size: cover;
   overflow: hidden;
   height: 327px;
@@ -6448,8 +6448,6 @@ footer h4 {
   font-family: 'Raleway', sans-serif;
   margin-top: 30px;
   padding-top: 45px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
   font-size: 4.2em;
   font-weight: 700;
   text-shadow: -5px 4px 0px #eeeeee;
@@ -6478,4 +6476,64 @@ footer h4 {
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 1.3em;
+}
+.next {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .next {
+    float: left;
+    width: 100%;
+  }
+}
+.next h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 45px;
+  font-size: 3.8em;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #eeeeee;
+  color: #777777;
+}
+.next .nextform {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .next .nextform {
+    float: left;
+    width: 50%;
+  }
+}
+.next .nextproof {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .next .nextproof {
+    float: left;
+    width: 50%;
+  }
+}
+.hiw {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #eee;
+}
+@media (min-width: 1200px) {
+  .hiw {
+    float: left;
+    width: 100%;
+  }
 }
