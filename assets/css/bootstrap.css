@@ -6514,6 +6514,10 @@ footer h4 {
     width: 58.33333333%;
   }
 }
+.next .nextform .form-group {
+  padding-left: 0;
+  padding-right: 0;
+}
 .next .nextproof {
   position: relative;
   min-height: 1px;
