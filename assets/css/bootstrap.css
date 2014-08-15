@@ -3615,6 +3615,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 1em;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: white;
 }
 #formbar .form-group .form-control::-webkit-input-placeholder {
   color: white;
@@ -4654,7 +4655,7 @@ a.list-group-item.active > .badge,
   border-top: 1px solid white;
   font-size: 4.2em;
   font-weight: 700;
-  text-shadow: -5px 4px 0px #8e16fa;
+  text-shadow: -3px 2px 0px #8e16fa;
 }
 .jumbotron .headlines h3 {
   padding: 0;
@@ -6428,6 +6429,7 @@ footer h4 {
   padding: 50px 0;
   border-top: 3px solid #eeeeee;
   border-bottom: 3px solid #eeeeee;
+  box-shadow: 3px 2px 9px #EEE;
 }
 .bottomform {
   position: relative;
@@ -6509,7 +6511,7 @@ footer h4 {
 @media (min-width: 1200px) {
   .next .nextform {
     float: left;
-    width: 50%;
+    width: 58.33333333%;
   }
 }
 .next .nextproof {
@@ -6517,11 +6519,14 @@ footer h4 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  background-image: url('../img/testimonial.jpg');
+  background-size: cover;
+  height: 480px;
 }
 @media (min-width: 1200px) {
   .next .nextproof {
     float: left;
-    width: 50%;
+    width: 41.66666667%;
   }
 }
 .hiw {
