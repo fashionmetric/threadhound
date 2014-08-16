@@ -14,22 +14,34 @@
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+    @media only screen and (max-width : 1024px) {
+      position: static;
+      width: 100%;
+    }
 }
 
 #formbar {
   width: 100%;
+  .form-horizontal {
+    padding: 0;
+    .container {
+      padding: 0;
+    }
+  }
 }
 
 #formbar {
   .form-group {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    @media only screen and (max-width : 320px) {
+      padding: 0;
+    }
     .form-control {
       background-color: rgba(255, 255, 255, 0.5);
       font-size: 1em;
       padding-top: 20px;
       padding-bottom: 20px;
+      color: white;
       &::-webkit-input-placeholder {
         color: white;
       }
@@ -43,7 +55,8 @@
         transition: all .5s;
         background-color: @gray-dark;
         box-shadow: none;
-        border-color: @gray-lighter
+        border-color: @gray-lighter;
+        color: white;
       }
     }
     .btn-primary {

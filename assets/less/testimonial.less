@@ -1,0 +1,35 @@
+.testimonial { 
+	margin: 100px 0;
+	@media only screen and (max-width : 320px) {
+		margin: 0;
+	}
+	.col-lg-8 {
+		background-color: #eee;
+		height: 327px;
+		position: relative;
+		h2 {
+			width: 85%;
+			margin: 90px auto 45px auto;
+			display: block;
+			font-size: 1.9em;
+			@media only screen and (max-width : 1024px) {
+				margin-top: 0;
+				padding: 90px 0 0 0;
+			}
+			@media only screen and (max-width : 320px) {
+				width: 100%;
+				font-size: 1.4em;
+				padding: 60px 0 0 0;
+			}
+		}
+		p {
+			text-align: center;
+		}
+	}
+	.col-lg-4{
+		background-image: url('../img/testimonial1.jpg');
+		background-size: cover;
+		overflow: hidden;
+		height: 327px;
+	}
+}

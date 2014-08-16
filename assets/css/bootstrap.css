@@ -3604,19 +3604,35 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 }
+@media only screen and (max-width: 1024px) {
+  #topform.affix {
+    position: static;
+    width: 100%;
+  }
+}
 #formbar {
   width: 100%;
 }
+#formbar .form-horizontal {
+  padding: 0;
+}
+#formbar .form-horizontal .container {
+  padding: 0;
+}
 #formbar .form-group {
-  margin-left: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
+}
+@media only screen and (max-width: 320px) {
+  #formbar .form-group {
+    padding: 0;
+  }
 }
 #formbar .form-group .form-control {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 1em;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: white;
 }
 #formbar .form-group .form-control::-webkit-input-placeholder {
   color: white;
@@ -3632,6 +3648,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #333333;
   box-shadow: none;
   border-color: #eeeeee;
+  color: white;
 }
 #formbar .form-group .btn-primary {
   font-size: 1.1em;
@@ -4626,29 +4643,6 @@ a.list-group-item.active > .badge,
     width: 100%;
   }
 }
-.jumbotron h2 {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 70px;
-  padding-top: 45px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  font-size: 4.2em;
-  font-weight: 700;
-  text-shadow: -5px 4px 1px #8e16fa;
-}
-.jumbotron h3 {
-  padding: 0;
-  text-align: center;
-  font-weight: 300;
-  font-size: 1.2em;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  padding-bottom: 35px;
-}
-.jumbotron h4 {
-  text-align: center;
-}
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
@@ -4669,6 +4663,47 @@ a.list-group-item.active > .badge,
     width: 50%;
   }
 }
+.jumbotron .headlines h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 70px;
+  padding-top: 45px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  font-size: 4.2em;
+  font-weight: 700;
+  text-shadow: -3px 2px 0px #8e16fa;
+}
+@media only screen and (max-width: 1024px) {
+  .jumbotron .headlines h2 {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .jumbotron .headlines h2 {
+    font-size: 2.2em;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron .headlines h2 {
+    font-size: 1.8em;
+  }
+}
+.jumbotron .headlines h3 {
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 35px;
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron .headlines h3 {
+    font-size: 1.1em;
+  }
+}
 .jumbotron .subheadline {
   position: relative;
   min-height: 1px;
@@ -4680,6 +4715,14 @@ a.list-group-item.active > .badge,
   .jumbotron .subheadline {
     float: left;
     width: 100%;
+  }
+}
+.jumbotron .subheadline h4 {
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron .subheadline h4 {
+    font-size: 16px;
   }
 }
 .jumbotron > hr {
@@ -6325,6 +6368,14 @@ button.close {
   color: #777777;
   font-weight: 300;
 }
+@media only screen and (max-width: 1024px) {
+  .intro img {
+    max-width: 100%;
+  }
+}
+.step-holder {
+  margin: 100px 0;
+}
 .step {
   position: relative;
   min-height: 1px;
@@ -6340,6 +6391,13 @@ button.close {
 }
 .step .step-shape {
   text-align: center;
+  background-color: #ddd;
+  padding: 5px 0;
+}
+.step .step-shape .fa-stack {
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -50px;
 }
 .step .step-shape .fa-lg {
   font-size: 3em;
@@ -6347,22 +6405,30 @@ button.close {
 .step .step-shape .fa-lg .fa-circle {
   color: #eeeeee;
 }
-.step .step-shape .fa-lg .fa-twitter {
-  color: #222222;
+.step .step-shape .fa-lg .fa-stack-1x {
+  color: #7405d8;
+}
+.step .step-content {
+  background-color: #eee;
 }
 .step .step-content h2 {
   text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #ffffff;
 }
 .step .step-content h3 {
-  width: 95%;
+  width: 80%;
   text-align: left;
   display: block;
   margin: 0 auto;
   font-family: 'Merriweather', serif;
   color: #333333;
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5em;
+  padding-bottom: 15px;
 }
 footer {
   background-color: #222222;
@@ -6375,11 +6441,206 @@ footer h4 {
   font-size: .9em;
   padding: 15px 0;
 }
-@media only screen and (max-width: 768px) {
-  footer h4 {
-    color: blue;
-  }
-}
 .as-seen {
   margin: 50px auto;
+}
+.testimonial {
+  margin: 100px 0;
+}
+@media only screen and (max-width: 320px) {
+  .testimonial {
+    margin: 0;
+  }
+}
+.testimonial .col-lg-8 {
+  background-color: #eee;
+  height: 327px;
+  position: relative;
+}
+.testimonial .col-lg-8 h2 {
+  width: 85%;
+  margin: 90px auto 45px auto;
+  display: block;
+  font-size: 1.9em;
+}
+@media only screen and (max-width: 1024px) {
+  .testimonial .col-lg-8 h2 {
+    margin-top: 0;
+    padding: 90px 0 0 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .testimonial .col-lg-8 h2 {
+    width: 100%;
+    font-size: 1.4em;
+    padding: 60px 0 0 0;
+  }
+}
+.testimonial .col-lg-8 p {
+  text-align: center;
+}
+.testimonial .col-lg-4 {
+  background-image: url('../img/testimonial1.jpg');
+  background-size: cover;
+  overflow: hidden;
+  height: 327px;
+}
+.credblock {
+  margin: 50px auto;
+  padding: 50px 0;
+  border-top: 3px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
+  box-shadow: 3px 2px 9px #EEE;
+}
+.bottomform {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .bottomform {
+    float: left;
+    width: 100%;
+  }
+}
+.bottomform .bottomhead {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+  padding-top: 45px;
+  font-size: 4.2em;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #eeeeee;
+  color: #777777;
+}
+@media only screen and (max-width: 320px) {
+  .bottomform .bottomhead {
+    font-size: 3em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+#bottomform .form-control {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#bottomform .form-control:focus {
+  -moz-transition: all .5s;
+  transition: all .5s;
+  background-color: #eeeeee;
+  box-shadow: none;
+  border-color: #eeeeee;
+  color: #222222;
+}
+#bottomform .control-label {
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#bottomform .btn-primary {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.3em;
+}
+.next {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 10px 10px 10px #eeeeee;
+}
+@media (min-width: 1200px) {
+  .next {
+    float: left;
+    width: 100%;
+  }
+}
+.next h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  font-size: 3.8em;
+  font-weight: 700;
+  text-shadow: -5px 4px 0px #eeeeee;
+  color: #777777;
+}
+@media only screen and (max-width: 320px) {
+  .next h2 {
+    font-size: 1.8em;
+  }
+}
+.next .nextform {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .next .nextform {
+    float: left;
+    width: 58.33333333%;
+  }
+}
+.next .nextform .form-group {
+  padding-left: 0;
+  padding-right: 0;
+}
+.next .nextform .form-group .form-control:focus {
+  -moz-transition: all .5s;
+  transition: all .5s;
+  background-color: #eeeeee;
+  box-shadow: none;
+  border-color: #eeeeee;
+  color: #222222;
+}
+.next .nextform .radio-inline {
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+.next .nextform h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.next .nextform button {
+  margin-bottom: 25px;
+}
+.next .nextproof {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: url('../img/testimonial.jpg');
+  background-size: cover;
+  height: 500px;
+}
+@media (min-width: 1200px) {
+  .next .nextproof {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .next .nextproof {
+    display: none;
+  }
+}
+.hiw {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #eee;
+}
+@media (min-width: 1200px) {
+  .hiw {
+    float: left;
+    width: 100%;
+  }
 }

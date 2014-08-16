@@ -1,32 +1,48 @@
+.step-holder {
+    margin: 100px 0;
+}
 .step {
     .make-lg-column(4);
         margin-top: 100px;
         .step-shape {
             text-align: center;
+            background-color: #ddd;
+            padding: 5px 0;
+            .fa-stack {
+                background-color: white;
+                border-radius: 50%;
+                margin-top: -50px;
+            }
             .fa-lg {
                 font-size: 3em;
                 .fa-circle {
                     color: @gray-lighter;
                 }
-                .fa-twitter {
-                    color: @gray-darker;
+                .fa-stack-1x {
+                    color: @brand-primary-dark;
                 }
             }
         }
         .step-content {
-        h2 {
-        text-align: center;
+            background-color: #eee;
+            h2 {
+                text-align: center;
+                margin-top: 0;
+                padding-top: 20px;
+                font-weight: @bold-weight;
+                text-shadow: -5px 4px 0px white;
+            }
+            h3 {
+                width: 80%;
+                text-align: left;
+                display: block;
+                margin: 0 auto;
+                font-family: @font-family-alt;
+                color: @gray-dark;
+                font-weight: @light-weight;
+                font-size: 1em;
+                line-height: 1.5em;
+                padding-bottom: 15px;
+            }
         }
-        h3 {
-        width: 95%;
-        text-align: left;
-        display: block;
-        margin: 0 auto;
-        font-family: @font-family-alt;
-        color: @gray-dark;
-        font-weight: @light-weight;
-        font-size: 1.1em;
-        line-height: 1.5em;
-        }
-    }
 }
