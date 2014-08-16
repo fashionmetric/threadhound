@@ -1,28 +1,56 @@
 .next {
 	.make-lg-column(12);
+	box-shadow: 10px 10px 10px @gray-lighter;
 	h2 {
 		text-align: center;
 		font-family: @font-family-base;
-		margin-top: 30px;
 		margin-bottom: 30px;
-		padding-top: 45px;
+		padding-top: 10px;
 		font-size: 3.8em;
 		font-weight: 700;
 		text-shadow: -5px 4px 0px @gray-lighter;
 		color: @gray-light;
+		@media only screen and (max-width : 320px) {
+			font-size: 1.8em;
+		}
 	}
 	.nextform {
 		.make-lg-column(7);
 			.form-group {
 				padding-left: 0;
 				padding-right: 0;
+				.form-control {
+					&:focus{
+					        -moz-transition: all .5s;
+					        transition: all .5s;
+					        background-color: @gray-lighter;
+					        box-shadow: none;
+					        border-color: @gray-lighter;
+					        color: @gray-darker;
+					}
+				}
+			}
+			.radio-inline {
+				margin-left: 0;
+				margin-bottom: 25px;
+			}
+			h4 {
+				text-align: center;
+				font-weight: bold;
+				font-size: 1.1em;
+			}
+			button {
+				margin-bottom: 25px;
 			}
 	}
 	.nextproof {
 		.make-lg-column(5);
 			background-image: url('../img/testimonial.jpg');
 			background-size: cover;
-			height: 480px;
+			height: 500px;
+			@media only screen and (max-width : 320px) {
+				display: none;
+			}
 	}
 }
 

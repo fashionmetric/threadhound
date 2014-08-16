@@ -3604,11 +3604,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 }
+@media only screen and (max-width: 1024px) {
+  #topform.affix {
+    position: static;
+    width: 100%;
+  }
+}
 #formbar {
   width: 100%;
 }
+#formbar .form-horizontal {
+  padding: 0;
+}
+#formbar .form-horizontal .container {
+  padding: 0;
+}
 #formbar .form-group {
   margin: 10px 0;
+}
+@media only screen and (max-width: 320px) {
+  #formbar .form-group {
+    padding: 0;
+  }
 }
 #formbar .form-group .form-control {
   background-color: rgba(255, 255, 255, 0.5);
@@ -4657,6 +4674,22 @@ a.list-group-item.active > .badge,
   font-weight: 700;
   text-shadow: -3px 2px 0px #8e16fa;
 }
+@media only screen and (max-width: 1024px) {
+  .jumbotron .headlines h2 {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .jumbotron .headlines h2 {
+    font-size: 2.2em;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron .headlines h2 {
+    font-size: 1.8em;
+  }
+}
 .jumbotron .headlines h3 {
   padding: 0;
   text-align: center;
@@ -4665,6 +4698,11 @@ a.list-group-item.active > .badge,
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   padding-bottom: 35px;
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron .headlines h3 {
+    font-size: 1.1em;
+  }
 }
 .jumbotron .subheadline {
   position: relative;
@@ -4681,6 +4719,11 @@ a.list-group-item.active > .badge,
 }
 .jumbotron .subheadline h4 {
   text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron .subheadline h4 {
+    font-size: 16px;
+  }
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -6325,6 +6368,11 @@ button.close {
   color: #777777;
   font-weight: 300;
 }
+@media only screen and (max-width: 1024px) {
+  .intro img {
+    max-width: 100%;
+  }
+}
 .step-holder {
   margin: 100px 0;
 }
@@ -6393,16 +6441,16 @@ footer h4 {
   font-size: .9em;
   padding: 15px 0;
 }
-@media only screen and (max-width: 768px) {
-  footer h4 {
-    color: blue;
-  }
-}
 .as-seen {
   margin: 50px auto;
 }
 .testimonial {
   margin: 100px 0;
+}
+@media only screen and (max-width: 320px) {
+  .testimonial {
+    margin: 0;
+  }
 }
 .testimonial .col-lg-8 {
   background-color: #eee;
@@ -6414,6 +6462,19 @@ footer h4 {
   margin: 90px auto 45px auto;
   display: block;
   font-size: 1.9em;
+}
+@media only screen and (max-width: 1024px) {
+  .testimonial .col-lg-8 h2 {
+    margin-top: 0;
+    padding: 90px 0 0 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .testimonial .col-lg-8 h2 {
+    width: 100%;
+    font-size: 1.4em;
+    padding: 60px 0 0 0;
+  }
 }
 .testimonial .col-lg-8 p {
   text-align: center;
@@ -6455,6 +6516,13 @@ footer h4 {
   text-shadow: -5px 4px 0px #eeeeee;
   color: #777777;
 }
+@media only screen and (max-width: 320px) {
+  .bottomform .bottomhead {
+    font-size: 3em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 #bottomform .form-control {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -6484,6 +6552,7 @@ footer h4 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  box-shadow: 10px 10px 10px #eeeeee;
 }
 @media (min-width: 1200px) {
   .next {
@@ -6494,13 +6563,17 @@ footer h4 {
 .next h2 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 30px;
   margin-bottom: 30px;
-  padding-top: 45px;
+  padding-top: 10px;
   font-size: 3.8em;
   font-weight: 700;
   text-shadow: -5px 4px 0px #eeeeee;
   color: #777777;
+}
+@media only screen and (max-width: 320px) {
+  .next h2 {
+    font-size: 1.8em;
+  }
 }
 .next .nextform {
   position: relative;
@@ -6518,6 +6591,26 @@ footer h4 {
   padding-left: 0;
   padding-right: 0;
 }
+.next .nextform .form-group .form-control:focus {
+  -moz-transition: all .5s;
+  transition: all .5s;
+  background-color: #eeeeee;
+  box-shadow: none;
+  border-color: #eeeeee;
+  color: #222222;
+}
+.next .nextform .radio-inline {
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+.next .nextform h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.next .nextform button {
+  margin-bottom: 25px;
+}
 .next .nextproof {
   position: relative;
   min-height: 1px;
@@ -6525,12 +6618,17 @@ footer h4 {
   padding-right: 15px;
   background-image: url('../img/testimonial.jpg');
   background-size: cover;
-  height: 480px;
+  height: 500px;
 }
 @media (min-width: 1200px) {
   .next .nextproof {
     float: left;
     width: 41.66666667%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .next .nextproof {
+    display: none;
   }
 }
 .hiw {
