@@ -6611,6 +6611,11 @@ footer h4 {
 .next .nextform button {
   margin-bottom: 25px;
 }
+.next .nextform .asterisk {
+  font-weight: 700;
+  color: red;
+  font-size: 20px;
+}
 .next .nextproof {
   position: relative;
   min-height: 1px;
