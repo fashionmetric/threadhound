@@ -6506,6 +6506,10 @@ footer h4 {
     padding-top: 0;
   }
 }
+#bottomform .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
 #bottomform .form-control {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -6604,7 +6608,7 @@ footer h4 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  background-image: url('../img/testimonial.jpg');
+  background-image: url('../img/about.png');
   background-size: cover;
   height: 500px;
 }

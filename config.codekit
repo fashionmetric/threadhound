@@ -106,17 +106,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/testimonial.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 104185,
-		"inputAbbreviatedPath": "\/assets\/img\/testimonial.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/testimonial.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/testimonial1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
