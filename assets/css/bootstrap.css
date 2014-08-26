@@ -4651,28 +4651,14 @@ a.list-group-item.active > .badge,
 .jumbotron .continuebar {
   padding: 100px 0;
 }
-.jumbotron .headlines {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 1200px) {
-  .jumbotron .headlines {
-    float: left;
-    width: 50%;
-  }
-}
 .jumbotron .headlines h2 {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   margin-top: 70px;
   padding-top: 45px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  font-size: 4.2em;
+  font-size: 6.2em;
   font-weight: 700;
-  text-shadow: -3px 2px 0px #8e16fa;
+  text-shadow: -3px 3px 0px #777777;
 }
 @media only screen and (max-width: 1024px) {
   .jumbotron .headlines h2 {
@@ -4695,8 +4681,6 @@ a.list-group-item.active > .badge,
   text-align: center;
   font-weight: 300;
   font-size: 1.2em;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
   padding-bottom: 35px;
 }
 @media only screen and (max-width: 320px) {
@@ -6351,7 +6335,7 @@ button.close {
   }
 }
 .intro {
-  padding: 150px 0 0 0;
+  padding: 50px 0 0 0;
   background-color: #eeeeee;
 }
 .intro h1 {
@@ -6486,7 +6470,6 @@ footer h4 {
   height: 327px;
 }
 .credblock {
-  margin: 50px auto;
   padding: 50px 0;
   border-top: 3px solid #eeeeee;
   border-bottom: 3px solid #eeeeee;
